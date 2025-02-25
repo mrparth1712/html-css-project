@@ -239,10 +239,10 @@ main .container-fluid .animation img {
   top: 180%;
   left: 40%;
 }
-.about .container .about-content h2{
+.about .container .d-flex .col-6 .about-content h2{
   padding-top: 30px;
 }
-.about .container .about-content h3{
+.about .container .about-content  h3{
   padding-top: 30px;
 }
 .about .container .about-content .btn{

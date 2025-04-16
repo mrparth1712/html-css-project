@@ -1,0 +1,20 @@
+/* media aapva mate ni screen pixal */
+
+@media (min-width:1300px) and (max-width: 1399px) {
+}
+@media (min-width:1200px) and (max-width: 1299px) {
+}
+@media (min-width:992) and (max-width: 1199px) {
+}
+@media (min-width:1024) and (max-width: 1199px) {
+}
+@media (max-width: 992px) {
+}
+@media (min-width:767) and (max-width: 991px) {
+}
+@media (max-width: 767px) { 
+}
+@media (min-width:576) and (max-width: 767px) {
+}
+@media (min-width:240) and (max-width: 575px) {
+}

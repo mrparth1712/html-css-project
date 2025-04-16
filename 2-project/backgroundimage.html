@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* body */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header css starts jyare aakha backgound ne aapvi hoi img tyre aa code lakhvo aane cover aapvu baki aakha ma nai ley image*/ 
+.container {
+  
+  background-image: url("imagess/gym2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-blend-mode: overlay; */
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  padding: 0px 50px;
+}
+header .logo h1,
+nav ul li a {
+  color: white;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 150px;
+}
+.hero_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin-left: 70px;
+}
+.hero_section h1,
+.hero_section p {
+  color: white;
+}
+.hero_section h1 span {
+  color: yellow;
+}
+.hero_section button {
+  padding: 15px 25px;
+}
+.hero_section #btn2 {
+  color: white;
+  background-color: yellow;
+  border: 2px solid yellow;
+}
+.hero_section #btn1 {
+  background-color: white;
+  border: 2px solid white;
+}
+.inner-box{
+  display: flex;
+  padding-top: 20px;
+}
+.box{
+  width: 16%;
+  border: 2px solid black;
+  margin-right: 10px;
+  background-color: blue;
+
+}
+
+/* header css ends */
+  </style>
+  <body>
+    <div class="top">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <!-- header starts -->
+    <div class="container">
+      <!-- header -->
+      <header>
+        <div class="logo">
+          <h1>Guarder</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Guards</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="hero">
+        <div class="hero_section">
+          <h1>
+            YOUR SAFETY <br />
+            <span> OUR RESPONSIBILITY</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod magna <br />
+            aliqua. Ut enim ad minim veniam
+          </p>
+          <div>
+            <button id="btn1">READ MORE</button>
+            <button id="btn2">GET A QUOTE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header ends -->
+
+
+
+  <section class="main-box">
+    <div class="inner-box">
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio.</p>
+      </div>
+      <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, aliquam!</div>
+      <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in nihil dolores a dolor ipsa quaerat similique enim, vel laborum, sequi nostrum natus excepturi. Magni accusantium iste non distinctio est?10</div>
+      <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat totam, autem eveniet cum provident ullam quae eum assumenda impedit sed quidem, pariatur in minima minus nobis earum voluptatem non veniam.</div>
+      <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit perferendis ipsum culpa enim omnis tempora nesciunt voluptatum vitae? Eveniet, dolorem iure. Dolorum facere nam iste ipsam! In, veritatis similique!</div>
+      <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor commodi inventore molestias, consectetur, quae doloribus, dolorum unde soluta consequuntur assumenda aperiam facere dolores quaerat natus quis. Possimus, ea mollitia.</div>
+    </div>
+  </section>
+  </body>
+</html>

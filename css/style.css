@@ -76,7 +76,9 @@ a {
 .col-12 {
   width: 100%;
 }
-
+li{
+  list-style: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +88,7 @@ a {
 }
 
 
-image{
+img{
   width: 100%;
   display: block;
 }
@@ -164,34 +166,36 @@ header .header-bottom nav ul li {
 main {
   background-image: url('../images/banner.jpg');
   background: rgba(0,0,0,0.0.5);
-  text-align: center;
   height: calc(90vh - 120px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-main .container-fluid h1 {
-  text-align: center;
+main .container-fluid{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main  h1 {
   padding-top: 15%;
   color: #fff;
 }
 
-main .container-fluid p {
-  text-align: center;
+main p {
   color: #fff;
   
 }
-main .container-fluid a{
+main a{
   margin-top: 10px;
 }
-main .container-fluid .animation-img{
-  margin-top: 20px;
-}
-main .container-fluid .animation-img {
+
+main .animation-img {
 	animation: spin 15s linear infinite;
 	-webkit-animation: spin 15s linear infinite;
-	margin: 50px 0 0;
+	margin: 20px 0 0;
+  width: 10%;
 }
 
 @keyframes spin {
@@ -205,30 +209,38 @@ main .container-fluid .animation img {
 	margin: 0 auto;
 	object-fit: none;
 }
-/* logo section */
 
-.container .support-logo{
+/* Support logo section */
+.support .support-logo{
   /* flex jevu kam kare column-count */
   column-count: 6; 
   /* display: flex; */
   padding-top: 20px;
 }
-.container .support-logo img{
+.support .support-logo img{
   width: 100px;
   height: 100px;
 }
 
 
 /* about section */
-.about .container .d-flex .col-6 .about-img h1{
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.about{
+  margin-top: 64px;
 }
 
-.about .container .d-flex .col-6 .about-img h1{
+.about .about-img{
+  position: relative;
+  height: 100%;
+  margin-right: 16px;
+}
+
+.about .about-img img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about  .about-img h1{
   width: 200px;
   height: 100px;
   background-color:black;
@@ -236,15 +248,133 @@ main .container-fluid .animation img {
   border-radius: 10px;
   text-align: center;
   position: absolute;
-  top: 180%;
-  left: 40%;
+  left:65% ;
+  top: 70%;
+
 }
-.about .container .d-flex .col-6 .about-content h2{
+
+.about .about-content h2{
   padding-top: 30px;
 }
-.about .container .about-content  h3{
+.about .about-content  h3{
   padding-top: 30px;
 }
-.about .container .about-content .btn{
+.about .about-content .btn{
   margin-top: 30px ;
+}
+
+.summary-title h1{
+  color: #fff;
+  text-align: center;
+}
+.summary-content{
+  margin: 20px;
+  padding: 50px;
+}
+.summary-content .col-3{
+  padding: 0 30px;
+}
+.summary{
+  background-color: #171717;
+  box-shadow: 30px ;
+}
+.summary-image img{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+ margin-top: 50px;
+  
+}
+.summary-heading h2{
+  color: #fff;
+}
+.summary-list li{
+  color: #fff;
+}
+/* expertise section */
+.main-heading{
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.expertise-inner .inner-heading h2{
+  padding-top: 50px;
+}
+.expertise-inner .common-title h5{
+  padding-top: 50px;
+}
+.expertise-inner .list ul li{
+  padding-top: 10px;
+}
+.expertise-inner .img{
+  width: 300px;
+  height: 300px;
+ position: relative;
+ bottom: 50px;
+ left: 40%;
+}
+ .expertise-inner .border{
+  border-radius: 30px 0px 30px;
+	border: 1px solid #D9D9D9;
+  margin: 100px;
+
+}
+.expertise-inner .border2{
+  border-radius: 30px 0px 30px;
+	border: 1px solid #D9D9D9;
+ margin: 100px;
+
+}
+/* service section */
+
+.service-title h1{
+  text-align: center;
+}
+.service-title p{
+  text-align: center;
+}
+.our-services-items{
+  padding-top: 50px;
+  
+}
+.service-part-1 p{
+  margin-top: 20px;
+}
+.service-part-2 p{
+  margin-top: 20px;
+}
+.service-part-3 p{
+  margin-top: 20px;
+}
+.service-part-1{
+  border-radius: 30px 0px 30px;
+	border: 1px solid #D9D9D9;
+ width: 40%;
+ height: 250px;
+ text-align: center;
+ background-color: transparent;
+
+ margin: 20px 20px;
+ padding: 10px 10px;
+}
+.service-part-2{
+  border-radius: 30px 0px 30px;
+	border: 1px solid #D9D9D9;
+ width: 40%;
+ height: 250px;
+ text-align: center;
+ background-color: transparent;
+ margin: 20px 20px;
+  padding: 10px 10px;
+}
+.service-part-3{
+  border-radius: 30px 0px 30px;
+	border: 1px solid #D9D9D9;
+ width: 40%;
+ height: 250px;
+ text-align: center;
+ background-color: transparent;
+ 
+ margin: 20px 20px;
+ padding: 10px 10px;
 }
